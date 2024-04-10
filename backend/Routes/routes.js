@@ -72,7 +72,7 @@ router.post("/create-user",async(req,res) => {
 // UPDATE ALL USERDETAILS AND SEND EMAIL
 router.put("/update-user",async (req,res) => {
     const {fname,userName,email,password,terms,image,location,artist,designer,employer} = req.body.userProfile;
-    const resend = new Resend('re_7B3bebgT_Gzo6CvnzRuvTbBxhv31Fy4CW');
+    const resend = new Resend(process.env.RESEND_API_KEY);
     try{
         const userToUpdate = new user({
             fname:fname,
