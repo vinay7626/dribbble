@@ -47,13 +47,13 @@ function Options() {
     return (
         <div className="w-full grid grid-cols-1">
             <div className="col-span-1 grid grid-cols-6">
-                <div className="col-span-1">
-                    <img className='md:p-6 md:w-40 sm:w-64 w-80 p-3' src={dribbleLogoLight} alt="logo" />
+                <div className="col-span-1 xl:col">
+                    <img className='md:p-6 md:w-40 sm:w-64 min-w-[70px] p-3 relative' src={dribbleLogoLight} alt="logo" />
                 </div>
-                <div className="col-span-1 place-content-center">
-                    <button type="button" className='lg:size-10 md:size-8 md:text-sm sm:size-6 size-4 text-xs bg-slate-300 rounded-md text-slate-500 font-extrabold hover:bg-slate-400'
+                {/* <div className="col-span-1 place-content-center"> */}
+                    <button type="button" className='lg:size-10 xl:left-[11%] absolute left-[15%] top-[2%] md:size-8 md:text-sm sm:size-6 size-4 text-xs bg-slate-300 rounded-md text-slate-500 font-extrabold hover:bg-slate-400'
                     onClick={() => navigate(-1)}>&lt;</button>
-                </div>
+                {/* </div> */}
             </div>
             <div className="col-span-1 text-center">
                 <h2 className='text-4xl p-5 font-bold'>What brings you to Dribbble?</h2>
