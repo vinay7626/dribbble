@@ -99,7 +99,6 @@ router.put("/update-user",async (req,res) => {
         }
         console.log("Email sent");
         res.status(200).send(updatedUser);
-        }
     } catch(err) {
         console.log(err);
         res.status(400).send(err);
