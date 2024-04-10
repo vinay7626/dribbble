@@ -94,6 +94,7 @@ router.put("/update-user",async (req,res) => {
             html: "<h2>This is a test email from Dribbble app developed by Vinay.</h2><p>If you are seeing this, the app and the api worked!</p><p><i>Thanks again for testing my app</i></p>"
         });
         if(error){
+            console.log(error);
             res.status(403).send(error);
         }else{
         console.log("Email sent");
