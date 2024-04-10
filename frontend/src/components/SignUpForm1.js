@@ -88,11 +88,11 @@ function SignUpForm1() {
 
     return (
         <div className="md:w-3/5 h-screen grid align-middle w-full">
-            <div className="w-full grid grid-cols-4 p-4 bg-dribble-orange md:bg-white">
+            <div className="w-full grid grid-cols-4 p-4 bg-dribble-orange md:bg-white sm-h-24 h-16">
                 <div className="col-span-2 md:hidden">
-                    <img src={dribbleLogo} alt={"dribble"} className="justify-normal block md:hidden sm:w-32 h-auto w-24" />
+                    <img src={dribbleLogo} alt={"dribble"} className="justify-normal block md:hidden sm:w-32 w-24" />
                 </div>
-                <div className="col-span-2 md:col-span-4 h-full text-right">
+                <div className="col-span-2 md:col-span-4 text-right">
                     <p className="sm:mt-4 text-dribbble-orange-text text-nowrap md:text-black sm:text-[16px] mt-2 text-sm">Already a member? <a className='text-indigo-500 hover:underline' href="#">Sign in</a></p>
                 </div>
             </div>
@@ -135,7 +135,7 @@ function SignUpForm1() {
                         </div>
                     </div>
                     <div className="grid grid-cols-1">
-                        <div className="px-4 py-2">
+                        <div className="px-4 py-2 text-center md:text-left">
                             <input className='bg-pink-500 px-9 py-2 rounded-lg text-white font-bold hover:bg-pink-600 cursor-pointer' type="submit" value="Create Account" />
                         </div>
                     </div>
