@@ -88,7 +88,7 @@ router.put("/update-user",async (req,res) => {
         })
         const updatedUser = await user.findOneAndUpdate({userName:userName},{artist:artist,designer:designer,employer:employer,image:image,location:location},{new:true});
         const {data,error} = await resend.emails.send({
-            from: "vinay.varma@resend.dev",
+            from: "vinayvarma10101998@gmail.com",
             to: email,
             subject: "Thanks for testing my app",
             html: "<h2>This is a test email from Dribbble app developed by Vinay.</h2><p>If you are seeing this, the app and the api worked!</p><p><i>Thanks again for testing my app</i></p>"
