@@ -38,7 +38,7 @@ function Options() {
             .then((res) => console.log(res))
             .then(() => navigate('/done'))
             .catch((err) => {
-                console.log(err);
+                console.log(err.response);
                 alert(err.response.data.message)
             });
         }else{
