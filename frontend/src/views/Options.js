@@ -37,7 +37,10 @@ function Options() {
             axios.put(`${process.env.REACT_APP_SERVER_API}/update-user`,{userProfile})
             .then((res) => console.log(res))
             .then(() => navigate('/done'))
-            .catch((err) => alert(err.message));
+            .catch((err) => {
+                console.log(err);
+                alert(err.response.data.message)
+            });
         }else{
             return
         }
