@@ -95,8 +95,8 @@ router.put("/update-user",async (req,res) => {
         });
         if(error){
             console.log(error);
-            res.status(403).send(error);
-        }else{
+            // res.status(403).send(error);
+        }
         console.log("Email sent");
         res.status(200).send(updatedUser);
         }
