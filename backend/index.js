@@ -11,7 +11,7 @@ require("dotenv").config();
 const PORT = process.env.PORT;
 
 const corsOptions = {
-    origin: 'https://main--dribbblevinay.netlify.app/',
+    origin: '*',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
     optionsSuccessStatus: 204,
