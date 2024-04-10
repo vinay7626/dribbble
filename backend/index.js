@@ -10,16 +10,16 @@ require("dotenv").config();
 
 const PORT = process.env.PORT;
 
-const corsOptions = {
-    origin: '*',
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true,
-    optionsSuccessStatus: 204,
-};
+// const corsOptions = {
+//     origin: '*',
+//     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+//     credentials: true,
+//     optionsSuccessStatus: 204,
+// };
 
 app.use(express.json());
 
-app.use(cors(corsOptions));
+app.use(cors());
 
 app.use(router);
 
